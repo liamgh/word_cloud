@@ -216,6 +216,6 @@ class WordCloud:
 
         # word index and corresponding tf-idf score
         for idx, score in sorted_items:
-            final_items.append([cv.get_feature_names()[idx], score])
+            final_items.append([cv.get_feature_names_out()[idx], score])
 
         return final_items
